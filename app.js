@@ -114,9 +114,13 @@ function calculateTime(){
   showAlert(message);
 }
 
-function onOpen() {
-  DocumentApp.getUi() 
-      .createMenu('Custom')
-      .addItem('Calculate research time', 'calculateTime')
-      .addToUi();
+function onOpen(e) {
+  var menu = DocumentApp.getUi().createAddonMenu(); 
+
+  if (e && e.authMode == ScriptApp.AuthMode.NONE) {
+    // Add a normal menu item (works in all authorization modes).
+    menu.addItem('Calculate research time', 'calculateTime');
+  } 
+
+  menu.addToUi();
 }
