@@ -5,14 +5,14 @@ describe("Research Time Check Test", function() {
 			var result = {"min": 10, "max": 20};
 			var message = generateMessage(result);
 
-			expect(message).toBe("[10-20mins]");
+			expect(message).toBe("The duration will be between 10-20 mins.");
 		});
 
 		it ("Min and max are equal", function() {
 			var result = {"min": 10, "max": 10};
 			var message = generateMessage(result);
 
-			expect(message).toBe("[10mins]");
+			expect(message).toBe("The duration will be 10 mins.");
 		});
 	});
 
