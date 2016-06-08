@@ -115,7 +115,6 @@ function calculateTime(){
 
 function onInstall(e) {
   onOpen(e);
-  use();
 }
 
 function onOpen(e) {
@@ -127,13 +126,4 @@ function onOpen(e) {
   } 
 
   menu.addToUi();
-}
-
-function use() {
-  var title = 'Discussion guide time check';
-  var message = 'The functions DATEADD and DATESUBTRACT are now available in ' +
-      'this spreadsheet. More information is available in the function help ' +
-      'box that appears when you start using them in a forumula.';
-  
-  showAlert(title, message);
 }

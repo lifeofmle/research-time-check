@@ -4,7 +4,7 @@ module.exports = function(config) {
     reporters: ['spec'],
     browsers: ['PhantomJS'],
     files: [
-      'app.js',
+      'code.gs',
       'tests/timeTest.js'
     ]
   });
