@@ -8,7 +8,7 @@ Calculate the duration of a questionnaire or survey that have a time associated 
 * Install the add-on in Google Docs
 * Click "Add-ons"
 * Click "Time Check"
-* Click "Calculate duration"
+* Click "Get total duration"
 
 ## Issues?
 Please report any issues to the [issues page](https://github.com/lifeofmle/research-time-check/issues)

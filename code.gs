@@ -113,17 +113,15 @@ function calculateTime(){
   showAlert("Time Check", message);
 }
 
-function onInstall(e) {
-  onOpen(e);
+function onInstall() {
+  onOpen();
 }
 
-function onOpen(e) {
+function onOpen() {
   var menu = DocumentApp.getUi().createAddonMenu(); 
 
-  if (e && e.authMode == ScriptApp.AuthMode.NONE) {
-    // Add a normal menu item (works in all authorization modes).
-    menu.addItem('Calculate research time', 'calculateTime');
-  } 
+  // Add a normal menu item (works in all authorization modes).
+  menu.addItem('Get total duration', 'calculateTime');  
 
   menu.addToUi();
 }
