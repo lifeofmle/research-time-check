@@ -11,4 +11,4 @@ Calculate the duration of a questionnaire or survey that have a time associated 
 * Click "Calculate duration"
 
 ## Issues?
-Please report any issues to the [issues page|https://github.com/lifeofmle/research-time-check/issues]
+Please report any issues to the [issues page](https://github.com/lifeofmle/research-time-check/issues)
